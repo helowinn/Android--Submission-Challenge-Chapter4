@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/lin_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oleoscript_bold"
+            android:padding="4dp"
+            android:rotation="-16"
+            android:text="@string/kertas"
+            android:textColor="#EF6C00"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oleoscript_bold"
+            android:padding="4dp"
+            android:rotation="-16"
+            android:text="@string/gunting"
+            android:textColor="#689F38"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oleoscript_bold"
+            android:padding="4dp"
+            android:rotation="-16"
+            android:text="@string/batu"
+            android:textColor="#F06292"
+            android:textSize="32sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lin_title">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oleoscript_regular"
+            android:textColor="#1E88E5"
+            android:textSize="24sp"
+            android:text="@string/pemain_1" />
+
+        <ImageView
+            android:id="@+id/img_batu_player"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="32dp"
+            app:srcCompat="@drawable/batu" />
+
+        <ImageView
+            android:id="@+id/img_kertas_player"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="32dp"
+            app:srcCompat="@drawable/kertas" />
+
+        <ImageView
+            android:id="@+id/img_gunting_player"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="32dp"
+            app:srcCompat="@drawable/gunting" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/oleoscript_bold"
+        android:textColor="#E53935"
+        android:text="@string/vs"
+        android:rotation="-20"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="@+id/lin_title"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/lin_title"
+        app:layout_constraintTop_toBottomOf="@+id/lin_title" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/lin_title"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/lin_title">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oleoscript_regular"
+            android:text="@string/com"
+            android:textColor="#1E88E5"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/img_batu_com"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="32dp"
+            app:srcCompat="@drawable/batu" />
+
+        <ImageView
+            android:id="@+id/img_kertas_com"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="32dp"
+            app:srcCompat="@drawable/kertas" />
+
+        <ImageView
+            android:id="@+id/img_gunting_com"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="32dp"
+            app:srcCompat="@drawable/gunting" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_refresh"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:srcCompat="@drawable/refresh" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

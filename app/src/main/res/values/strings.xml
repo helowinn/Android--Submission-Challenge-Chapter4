@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Challenge 4 Game Suit</string>
+    <string name="kertas">Kertas</string>
+    <string name="gunting">Gunting</string>
+    <string name="batu">Batu</string>
+    <string name="vs">VS</string>
+    <string name="com_n_menang">COM\n Menang</string>
+    <string name="draw">DRAW</string>
+    <string name="pemain_1">Pemain 1</string>
+    <string name="com">COM</string>
+    <string name="pemain_1_nmenang">Pemain 1\nMenang</string>
+    <string name="suit_game">Suit Game</string>
+    <string name="hasil_permainan">Hasil Permainan</string>
+</resources>
